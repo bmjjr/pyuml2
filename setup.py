@@ -5,9 +5,9 @@ from setuptools import setup
 import pyuml2
 
 packages = ['pyuml2',
+            'pyuml2.standard',
             'pyuml2.uml',
-            'pyuml2.types'
-            'pyuml2.standard']
+            'pyuml2.types']
 
 
 if sys.version_info < (3, 3):
