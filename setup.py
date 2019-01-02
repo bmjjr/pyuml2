@@ -6,7 +6,8 @@ import pyuml2
 
 packages = ['pyuml2',
             'pyuml2.uml',
-            'pyuml2.types']
+            'pyuml2.types'
+            'pyuml2.standard']
 
 
 if sys.version_info < (3, 3):

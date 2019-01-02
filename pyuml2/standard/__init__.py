@@ -1,4 +1,4 @@
-
+# -*- coding: utf-8 -*-
 from .standard import getEClassifier, eClassifiers
 from .standard import name, nsURI, nsPrefix, eClass
 from .standard import Auxiliary, Call, Create, Derive, Destroy, Document, File, Entity, Executable, Focus, Framework, Implement, ImplementationClass, Instantiate, Library, Metaclass, ModelLibrary, Process, Realization, Refine, Responsibility, Script, Send, Service, Source, Specification, Subsystem, Trace, Type, Utility, BuildComponent, Metamodel, SystemModel

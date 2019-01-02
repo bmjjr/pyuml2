@@ -1,4 +1,4 @@
-
+# -*- coding: utf-8 -*-
 from .types import getEClassifier, eClassifiers
 from .types import name, nsURI, nsPrefix, eClass
 from .types import Boolean, Integer, Real, String, UnlimitedNatural

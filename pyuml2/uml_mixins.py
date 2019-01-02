@@ -253,9 +253,13 @@ result = (ownedElement->union(ownedElement->collect(e | e.allOwnedElements()))->
         return self.eAllContents()
 
     def must_be_owned(self):
-        """The query mustBeOwned() indicates whether Elements of this type must have an owner. Subclasses of Element that do not require an owner must override this operation.
-result = (true)
-<p>From package UML::CommonStructure.</p>"""
+        """
+        The query mustBeOwned() indicates whether Elements of this type must have
+        an owner. Subclasses of Element that do not require an owner must override
+        this operation.
+        result = (true)
+        <p>From package UML::CommonStructure.</p>
+        """
         return True
 
 
@@ -286,8 +290,13 @@ class NamedElementMixin(object):
         super(NamedElementMixin, self).__init__(**kwargs)
 
     def visibility_needs_ownership(self, diagnostics=None, context=None):
-        """If a NamedElement is owned by something other than a Namespace, it does not have a visibility. One that is not owned by anything (and hence must be a Package, as this is the only kind of NamedElement that overrides mustBeOwned()) may have a visibility.
-(namespace = null and owner <> null) implies visibility = null"""
+        """
+        If a NamedElement is owned by something other than a Namespace,
+        it does not have a visibility. One that is not owned by anything
+        (and hence must be a Package, as this is the only kind of
+        NamedElement that overrides mustBeOwned()) may have a visibility.
+        (namespace = null and owner <> null) implies visibility = null
+        """
         raise NotImplementedError(
             'operation visibility_needs_ownership(...) not yet implemented')
 
